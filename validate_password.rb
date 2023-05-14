@@ -9,7 +9,6 @@ class ValidatePassword
     return false if (@password.split("") &  ("A".."Z").to_a).empty?
     return false if (@password.split("") &  ("a".."z").to_a).empty?
     return false if (@password.split("") &  ("0".."9").to_a).empty?
-
     return false if (@password.split("") &  ["!","@", "#", "$", "%", "&," "*", "+", "=", ":", ";", "?", "<", ">"]).empty?
 
     3.upto(@password.length) do |index|
